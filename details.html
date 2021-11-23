@@ -46,8 +46,15 @@
           <span class="total">147</span> donantes
         </p>
         <div class="donations__buttons">
-          <div class="boton btn btn-secondary btn-lg">Compartir</div>
-          <div class="boton btn btn-primary btn-lg">Donar</div>
+          <button
+            type="button"
+            class="boton btn btn-secondary btn-lg"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            Compartir
+          </button>
+          <button class="boton btn btn-primary btn-lg">Donar</button>
         </div>
       </div>
       <div class="description">
@@ -124,9 +131,127 @@
               Continuar
             </button>
           </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    ¡Compartir tambien es una forma de ayudar!
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="modal__subtitle">Las campañas que se comparten en redes sociales tienen 5 veces más posibilidade de alcanzar su meta</p>
+                  <div class="modal__social-media">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fab fa-facebook "></i>Facebook</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-youtube "></i>Email</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-twitter "></i>Twitter</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fab fa-instagram "></i>Instagram</a>
+                      </li>
+                    </ul>
+                 
+                </div>
+                <div class="modal-footer">
+                  <div class="modal__link">
+                    <input type="text" value="https://donapp.com/123" readonly="readonly">
+                    <button type="button" class="btn btn-primary">
+                      Copiar
+                    </button>
+                  </div>
+                  <p class="modal__tip"><span>Consejo:</span> Pega el enlace de esta recaudación de fondos en cualquier lugar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <footer>
+      <hr />
+      <section class="footer__nav">
+        <div>
+          <div class="logo">
+            <span>DonApp</span>
+          </div>
+          <div class="language">
+            <i class="far fa-flag"></i>
+            <p>Español - Latam</p>
+          </div>
+        </div>
+        <div>
+          <p>RECAUDAR FONDOS PARA</p>
+          <ul>
+            <li><a href="#">Salud</a></li>
+            <li><a href="#">Educación</a></li>
+            <li><a href="#">In Memoriam</a></li>
+            <li><a href="#">Animales</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>MÁS INFORMACIÓN</p>
+          <ul>
+            <li><a href="#">Cómo funciona DonApp</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Historias de éxito</a></li>
+            <li><a href="#">Acerca de</a></li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <section class="footer__site-info">
+        <div class="social-media">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="copyright">
+            <p>© 2021 DonApp</p>
+          </div>
+          <div class="legal">
+            <ul>
+              <li><a href="#">Condiciones</a></li>
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Información legal</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
