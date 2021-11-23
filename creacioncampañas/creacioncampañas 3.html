@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="creacioncampañas.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a46b197797.js" crossorigin="anonymous"></script>
+    <title>Formulario de registro con múltiples pasos</title>
+   
+</head>
+<body>
+    <div class="root">
+        <form action="" class="form-register">
+            <div class="form-register__header">
+                <ul class="progressbar">
+                    <li class="progressbar__option active">paso 1</li>
+                    <li class="progressbar__option active">paso 2</li>
+                    <li class="progressbar__option active">paso 3</li>
+                </ul>
+                <h1 class="form-register__title">Cuenta tu historia</h1>
+            </div>
+            <div class="form-register__body">
+                <div class="step active" id="step-1">
+                    <div class="step__header">
+                                </div>
+                    <div class="step__body">
+                        <p>¿Cuál es el titulo de tu campaña?</p>
+                        <input type="text" name="title" id="title" placeholder="Título" class="step__input">
+                        <p>¿Porque vas a recaudar fondos?</p>
+                        <textarea type="text" name="txtDescripcion" id="txtDescripcion"></textarea> 
+                       <br>
+                       <p>Agrega una foto o video de portada</p>
+                        <div class="img-container">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="step__footer">
+                        <button type="button" class="step__button step__button--back" data-to_step="2" data-step="3">Regresar</button>
+                        <button type="submit" class="step__button">Terminar</button>
+                    </div>
+                </div>
+                    <div class="step__footer">
+        
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+     <script src="https://cdn.ckeditor.com/ckeditor5/18.0.0/classic/ckeditor.js"></script>
+</body>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#txtDescripcion' ) )
+        .catch( error => {
+        console.error( error );
+        } );
+    </script>
+</html>
