@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 :root {
-  --color__main: #03a85c;
+  --color__main: #ff0157;
   --color__title: #323332;
   --color__text: #767777;
   --color__background: #fffefe;
@@ -16,6 +16,9 @@
 /* Buttons*/
 
 /* HEADER */
+section{
+  padding: 80px;
+}
 header {
   position: fixed;
   top: 0;
@@ -44,7 +47,7 @@ header.sticky .logo {
   color: #111;
 }
 header .logo span {
-  color: #ff0157;
+  color: var(--color__main);
 }
 header .navigation {
   position: relative;
