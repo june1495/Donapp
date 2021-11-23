@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <link rel="stylesheet" href="creacioncampañas.css">
+     <title>Formulario de registro con múltiples pasos</title>
+   
+</head>
+<body>
+    <div class="root">
+        <form action="" class="form-register">
+            <div class="form-register__header">
+                <ul class="progressbar">
+                    <li class="progressbar__option active">paso 1</li>
+                    <li class="progressbar__option">paso 2</li>
+                    <li class="progressbar__option">paso 3</li>
+                </ul>
+                <h1 class="form-register__title">Inicia tu campaña</h1>
+            </div>
+            <div class="form-register__body">
+                <div class="step active" id="step-1">
+                    <div class="step__header">
+                                </div>
+                    <div class="step__body">
+                        <p>Nombre</p>
+                        <input type="text" name="name" id="name" placeholder="Tu nombre ej:Juan Pérez" class="step__input">
+                        <p>¿Dónde vives?</p>
+                        <input type="text" name="place" id="place" placeholder="" class="step__input">
+                        <input type="text" name="place" id="place" placeholder="" class="step__input">
+                        <p>¿Para que estás recaudando fondos?</p>
+                        <select class="step__input" name="categoría">
+                        <option value="Salud">Salud</option>
+                        <option value="Emergencia">Emergencia</option>
+                        <option value="Sepelio">Sepelio</option>
+                        </select>
+                    </div>
+                    <div class="step__footer">
+                        <button type="button" class="step__button step__button--next" data-to_step="2" data-step="1">Siguiente</button>
+                    </div>
+                </div>
+                    <div class="step__footer">
+        
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
