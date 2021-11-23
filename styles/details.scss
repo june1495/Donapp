@@ -1,0 +1,197 @@
+/* details */
+.btn-primary {
+  background-color: var(--color__main);
+  border: var(--color__main);
+  &:hover {
+    background-color: darken(#ff0157, 10%);
+    color: black;
+  }
+  &:focus{
+    background-color: var(--color__main);
+    border: var(--color__main);
+    color: var(--color__background);
+  }
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .show > .btn-primary.dropdown-toggle {
+    background-color: var(--color__main);
+    border: var(--color__main);
+    color: var(--color__background);
+  }
+.details__main {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  .campaign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__img {
+      width: 100%;
+      max-width: 720px;
+      max-height: 380px;
+      border-radius: 16px;
+    }
+    &__title {
+      margin: 20px 0 16px;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0 32px 0 16px;
+      text-align: justify;
+    }
+  }
+  .donations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    max-width: 320px;
+    &__progress {
+      width: 100%;
+      height: 8px;
+      margin-bottom: 12px;
+    }
+    &__progress div {
+      width: 85%;
+      background-color: var(--color__main);
+    }
+    &__collection {
+      font-size: 14px;
+    }
+    &__collection .amount {
+      font-size: 21px;
+      font-weight: bold;
+    }
+    &__collection .total {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    &__buttons .boton {
+      margin-bottom: 8px;
+    }
+  }
+  .description {
+    padding: 8px 16px;
+    &__tags {
+      width: 100%;
+      min-height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid var(--color__text);
+      border-bottom: 1px solid var(--color__text);
+      padding: 8px;
+      margin: 12px 0;
+      p {
+        margin-bottom: 0;
+        text-align: center;
+      }
+    }
+    &__content {
+      text-align: justify;
+    }
+  }
+  .comments {
+    &__title {
+      margin-top: 12px;
+      font-weight: bold;
+    }
+    .comment-card {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 8px 0;
+      margin: 16px 0;
+      min-height: 124px;
+      border-top: solid 1px var(--color__text);
+      .comment-card__text {
+        padding: 0;
+        margin: 0;
+        margin-left: 12px;
+      }
+      .comment-card__container {
+        display: flex;
+        flex-direction: column;
+        .comment-card__donator {
+          width: 280px;
+          margin-left: 12px;
+          display: flex;
+          align-items: center;
+          padding-top: 12px;
+          span {
+            margin-left: 4px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+  }
+  .cta {
+    border-top: solid 1px var(--color__text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    &__text {
+      font-size: 14px;
+      text-align: center;
+    }
+    &__name {
+      font-weight: bold;
+    }
+  }
+}
+
+#more {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .details__main {
+    grid-template-columns: 2fr 1fr;
+    column-gap: 16px;
+    padding: 0 96px;
+    .cta {
+      display: flex;
+      flex-direction: row;
+      &__text {
+  
+        text-align: center;
+      }
+  
+    }
+  }
+  .donations {
+    height: 280px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.25);
+    &__collection {
+      order: -1;
+    }
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    &__buttons .boton {
+      margin-bottom: 8px;
+    }
+  }
+
+  
+}
