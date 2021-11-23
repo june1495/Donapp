@@ -16,7 +16,7 @@
 /* Buttons*/
 
 /* HEADER */
-section{
+section {
   padding: 80px;
 }
 header {
@@ -28,7 +28,7 @@ header {
   z-index: 10000;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   transition: 0.5s;
 }
 header.sticky {
@@ -69,8 +69,42 @@ header.sticky .navigation li a {
 header .navigation li a:hover {
   color: #ff0157;
 }
+.boton {
+  color: #fff;
+  font-size: 14px;
+  background: var(--color__main);
+  display: inline-block;
+  border: none;
+  padding: 5px 10px;
+  margin-top: -5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  font-family: Poppins;
+  border-radius: 5px;
+}
 .boton:hover {
   color: #000;
+}
+.sub-menu-1 {
+  display: none;
+}
+header ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 1);
+  margin-top: 4px;
+  margin-left: -20px;
+}
+header ul li:hover .sub-menu-1 a {
+  color: #000;
+}
+header .navigation li:hover .sub-menu-1 ul li {
+  width: 150px;
+  padding: 10px;
 }
 /*banner */
 .banner {
@@ -139,7 +173,7 @@ header .navigation li a:hover {
 .cards .content .box .imgBx {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 150px;
 }
 .cards .content .box .imgBx img {
   position: absolute;
