@@ -29,12 +29,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 header.sticky {
   background: #fff;
   padding: 0px 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  align-items: baseline;
 }
 header .logo {
   color: #fff;
@@ -45,6 +46,7 @@ header .logo {
 }
 header.sticky .logo {
   color: #111;
+  margin-top: 10px;
 }
 header .logo span {
   color: var(--color__main);
@@ -60,15 +62,15 @@ header .navigation li {
 header .navigation li a {
   text-decoration: none;
   color: #fff;
-  font-weight: 300;
+  font-weight: 700;
   text-align: center;
 }
 header.sticky .navigation li a {
   color: #111;
 }
-header .navigation li a:hover {
+/* header .navigation li a:hover {
   color: #ff0157;
-}
+} */
 .boton {
   color: #fff;
   font-size: 14px;

@@ -306,6 +306,7 @@
 
 .modal-body .modal__tip {
   margin-top: 16px;
+
   text-align: justify;
 }
 
@@ -340,7 +341,6 @@
   .details__main .modal-body {
     padding: 32px;
     max-width: 466px;
-  }
   .details__main .modal-body .modal__subtitle {
     text-align: justify;
   }
