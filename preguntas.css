@@ -1,0 +1,10 @@
+.preg {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.preg h1,
+h6 {
+  align-self: center;
+  margin-bottom: 40px;
+}
